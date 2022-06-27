@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library ctf game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Library ctf game</h1>
+        <div id="intro"><p>Welcome to the library capture the flag (ctf) game. The goal of this game is to take the player (you) through the process of doing library research. We will take a subject and develop it into a topic, find basic information about it, and research it using books from the library catalog, the library journal databases, and the web.</p> 
+            <h2>Instructions:</h2> 
+            <p>We have broken down the library research process into five sections below. Click each of the sections to find a series of fill-in the blank questions and a flag field.</p>  
+            <p>At the top of each section there is a walkthrough icon. Click the icon to open a new page. As you read the walkthrough, answer the questions by filling the blank and clicking the submit answer button.</p> 
+            <p>At the end of the walkthrough there will be a capture-the-flag exercise. Follow the instructions correctly and you will find a 30 digit flag. Copy this number, paste it in the flag field, and submit to complete the section.</p> 
+            <p>By the end of the five sections, you will find a final flag that you will copy and send to your instructor to let them know you have completed the game.</p> 
+        </div>
+    </header>
+    <div id="section_header" onclick="showSection('section1')"><img src="images/process_icon.svg" alt="icon" srcset="" width="50" height="50"><h2>Section 1: the research process</h2><a href="walkthrough_research_process.html" target="_blank" rel="noopener"><img src="images/download.svg" alt="Walkthrough" srcset="" width="50" height="50"> Walkthrough </a><div class="task_completed" id="task_completed1"><img src="images/lock.svg" alt="not answered" width="50" height="50"></div></div>
+        <div class="section" id="section1">
+            <div class="task">
+                <div id="question">
+                    <h3>Question 1</h3>
+                    <p>1. From the latin <i>procedere</i>, <input type="text" name="answer11" id="answer11" placeholder="******s"> is a series of actions or operations conducing to an end. <input type="button" value="Submit" onclick="submitAnswer('answer11', 'check11', -309518737)"><span class="check" id="check11"><img src="images/error_icon.svg" alt="not answered" width="50" height="50"></span></p>
+                </div>
+                <div id="question">
+                    <h3>Question 2</h3>
+                    <p>2. If we think of library research as a process, we would call it the <input type="text" name="answer12" id="answer12" placeholder="******** ******s">. <input type="button" value="Submit" onclick="submitAnswer('answer12', 'check12', 1290186986)"><span class="check" id="check12"><img src="images/error_icon.svg" alt="not answered" width="50" height="50"></span></p>
+                </div>
+                <div id="question">
+                    <h3>Question 3</h3>
+                    <p>3: Among the important things to know about the assignment are the <input type="text" name="answer13" id="answer13" placeholder="*** ***e">, the type of essay, and the citation style to be used. <input type="button" value="Submit" onclick="submitAnswer('answer13', 'check13', 1870262874)"><span class="check" id="check13"><img src="images/error_icon.svg" alt="not answered" width="50" height="50"></span></p>
+                </div>
+                <div id="question">
+                    <h3>Question 4</h3>
+                    <p>4: In general, there's two main types of essays: argumentative and <input type="text" name="answer14" id="answer14" placeholder="*******c">. <input type="button" value="Submit" onclick="submitAnswer('answer14', 'check14', -1024444787)"><span class="check" id="check14"><img src="images/error_icon.svg" alt="not answered" width="50" height="50"></span></p>
+                </div>
+                <div id="question">
+                    <h3>Question 5</h3>
+                    <p>5: Most writing courses use the <input type="text" name="answer15" id="answer15" placeholder="**A"> citation style. <input type="button" value="Submit" onclick="submitAnswer('answer15', 'check15', 108194)"><span class="check" id="check15"><img src="images/error_icon.svg" alt="not answered" width="50" height="50"></span></p>
+                </div>
+                <div id="exercise1">
+                    <h3>Exercise 1</h3>
+                    <label for="exercise1_box">Paste the MLA citation from the Merriam-Webster dictionary online here:</label>
+                    <input type="text" size="60" name="exercise1_box" id="exercise1_box" placeholder="MLA citation">
+                    <input type="button" value="Submit" onclick="getFlagExercise1('exercise1_box', 'flag_field1')">
+                    <div id="flag_field1"></div>
+                </div>
+                <div id="flag">
+                    <h3>Flag</h3>
+                    <label for="flag_box1">Paste your flag here:</label>
+                    <input type="text" name="flag_box1" id="flag_box1" size="35">
+                    <input type="button" value="submit" onclick="checkFlag('flag_box1', 'finish_1', 'task_completed1')">
+                    <div id="finish_1"></div>
+                </div>
+            </div>
+        </div>
+    <div id="section_header" onclick="showSection('section2')"><img src="images/key_icon.svg" alt="icon" srcset="" width="50" height="50"><h2>Section 2: develop a topic and find key concepts</h2><a href="walkthrough_research_process.html" target="_blank" rel="noopener"><img src="images/download.svg" alt="Walkthrough" srcset="" width="50" height="50"> Walkthrough </a><div class="task_completed" id="task_completed2"><img src="images/lock.svg" alt="not answered" width="50" height="50"></div></div>
+    <div class="section" id="section2">
+        <div class="task">
+            <div id="question">
+                <h3>Question 1</h3>
+                <p>If we turn developing a topic into a four-step process, step one is to come up with a <input type="text" name="answer21" id="answer21" placeholder="***** ****c">.<input type="button" value="Submit" onclick="submitAnswer('answer21', 'check21', 1432352273)"><span class="check" id="check21"><img src="images/error_icon.svg" alt="not answered" width="50" height="50"></span></p>
+            </div>
+            <div id="question">
+                <h3>Question 2</h3>
+                <p>Step two is to break down the broad topic into related <input type="text" name="answer22" id="answer22" placeholder="********s">.<input type="button" value="Submit" onclick="submitAnswer('answer22', 'check22', 554493796)"><span class="check" id="check22"><img src="images/error_icon.svg" alt="not answered" width="50" height="50"></span></p>
+            </div>
+            <div id="question">
+                <h3>Question 3</h3>
+                <p>Step three is to take a subtopic and turn it into a <input type="text" name="answer23" id="answer23" placeholder="******** *******n">.<input type="button" value="Submit" onclick="submitAnswer('answer23', 'check23', 1180367051)"><span class="check" id="check23"><img src="images/error_icon.svg" alt="not answered" width="50" height="50"></span></p>
+            </div>
+            <div id="question">
+                <h3>Question 4</h3>
+                <p>Step four and last is to make sure the topic is relevant to the class, has the right scope, and most importantly, is <input type="text" name="answer24" id="answer24" placeholder="**********g">.<input type="button" value="Submit" onclick="submitAnswer('answer24', 'check24', 1973397624)"><span class="check" id="check24"><img src="images/error_icon.svg" alt="not answered" width="50" height="50"></span></p>
+            </div>
+            <div id="question">
+                <h3>Question 5</h3>
+                <p>Researchers find key concepts, keywords, and basic information about a topic using <input type="text" name="answer25" id="answer25" placeholder="************s"> and dictionaries.<input type="button" value="Submit" onclick="submitAnswer('answer25', 'check25', 1364515731)"><span class="check" id="check25"><img src="images/error_icon.svg" alt="not answered" width="50" height="50"></span></p>
+            </div>
+            <div id="exercise2">
+                <h3>Exercise 2</h3>
+                <label for="exercise2_box">Paste the wikipedia item ID number here:</label>
+                <input type="text" size="20" name="exercise2_box" id="exercise2_box" placeholder="Wikidata item ID">
+                <input type="button" value="Submit" onclick="getFlag('exercise2_box', 1424237664, 'flag_field2')">
+                <div id="flag_field2"></div>
+            </div>
+            <div id="flag">
+                <h3>Flag</h3>
+                <label for="flag_box2">Paste your flag here:</label>
+                <input type="text" name="flag_box2" id="flag_box2" size="35">
+                <input type="button" value="submit" onclick="checkFlag('flag_box2', 'finish_2', 'task_completed2')">
+                <div id="finish_2"></div>
+            </div>
+        </div>
+    </div>
+    <div id="section_header" onclick="showSection('section3')"><img src="images/book_icon.svg" alt="icon" srcset="" width="50" height="50"><h2>Section 3: find library books using the library catalog</h2><a href="walkthrough_research_process.html" target="_blank" rel="noopener"><img src="images/download.svg" alt="Walkthrough" srcset="" width="50" height="50"> Walkthrough </a><div class="task_completed" id="task_completed3"><img src="images/lock.svg" alt="not answered" width="50" height="50"></div></div>
+    <div class="section" id="section3">
+        <div class="task">
+            <div id="question">
+                <h3>Question 1</h3>
+                <p>One source we can use to find information for our essay is <input type="text" name="answer31" id="answer31" placeholder="******* ****s">.<input type="button" value="Submit" onclick="submitAnswer('answer31', 'check31', 1017029381)"><span class="check" id="check31"><img src="images/error_icon.svg" alt="not answered" width="50" height="50"></span></p>
+            </div>
+            <div id="question">
+                <h3>Question 2</h3>
+                <p>We find library books using the <input type="text" name="answer32" id="answer32" placeholder="******* ******g">.<input type="button" value="Submit" onclick="submitAnswer('answer32', 'check32', -1396296268)"><span class="check" id="check32"><img src="images/error_icon.svg" alt="not answered" width="50" height="50"></span></p>
+            </div>
+            <div id="question">
+                <h3>Question 3</h3>
+                <p>A book, or more specifically, a <input type="text" name="answer33" id="answer33" placeholder="********h">, talks in depth and breath about a subject, usually through a single author.<input type="button" value="Submit" onclick="submitAnswer('answer33', 'check33', -1442980789)"><span class="check" id="check33"><img src="images/error_icon.svg" alt="not answered" width="50" height="50"></span></p>
+            </div>
+            <div id="question">
+                <h3>Question 4</h3>
+                <p>The library catalog is a computer program that keeps a <input type="text" name="answer34" id="answer34" placeholder="***t"> of all the books available at the library.<input type="button" value="Submit" onclick="submitAnswer('answer34', 'check34', 3322014)"><span class="check" id="check34"><img src="images/error_icon.svg" alt="not answered" width="50" height="50"></span></p>
+            </div>
+            <div id="question">
+                <h3>Question 5</h3>
+                <p>Before we can use books to find information, we need to have a <input type="text" name="answer35" id="answer35" placeholder="********* ****c"> and some keywords.<input type="button" value="Submit" onclick="submitAnswer('answer35', 'check35', -1393751093)"><span class="check" id="check35"><img src="images/error_icon.svg" alt="not answered" width="50" height="50"></span></p>
+            </div>
+            <div id="exercise1">
+                <h3>Exercise 3</h3>
+                <label for="exercise1_box">Paste the citation from the library catalog here:</label>
+                <input type="text" size="120" name="exercise3_box" id="exercise3_box" placeholder="Library catalog citation in MLA">
+                <input type="button" value="Submit" onclick="getFlag('exercise3_box', 2011119281, 'flag_field3')">
+                <div id="flag_field3"></div>
+            </div>
+            <div id="flag">
+                <h3>Flag</h3>
+                <label for="flag_box3">Paste your flag here:</label>
+                <input type="text" name="flag_box3" id="flag_box3" size="35">
+                <input type="button" value="submit" onclick="checkFlag('flag_box3', 'finish_3', 'task_completed3')">
+                <div id="finish_3"></div>
+            </div>
+        </div>
+    </div>
+    <div id="section_header" onclick="showSection('section4')"><img src="images/database_icon.svg" alt="icon" srcset="" width="50" height="50"><h2>Section 4: search library databases for journal articles</h2><a href="walkthrough_research_process.html" target="_blank" rel="noopener"><img src="images/download.svg" alt="Walkthrough" srcset="" width="50" height="50"> Walkthrough </a><div class="task_completed" id="task_completed4"><img src="images/lock.svg" alt="not answered" width="50" height="50"></div></div>
+    <div class="section" id="section4">
+        <div class="task">
+            <div id="question">
+                <h3>Question 1</h3>
+                <p>Technically and in general, a <input type="text" name="answer41" id="answer41" placeholder="*******e"> is a large collection of data, organized in tables, and in a way to make it searchable by computer.<input type="button" value="Submit" onclick="submitAnswer('answer41', 'check41', 1789464955)"><span class="check" id="check41"><img src="images/error_icon.svg" alt="not answered" width="50" height="50"></span></p>
+            </div>
+            <div id="question">
+                <h3>Question 2</h3>
+                <p><input type="text" name="answer42" id="answer42" placeholder="******* ********s"> are lists of articles published in academic journals.<input type="button" value="Submit" onclick="submitAnswer('answer42', 'check42', 666958131)"><span class="check" id="check42"><img src="images/error_icon.svg" alt="not answered" width="50" height="50"></span></p>
+            </div>
+            <div id="question">
+                <h3>Question 3</h3>
+                <p>While books are broad and cover a topic in depth, a journal article is usually <input type="text" name="answer43" id="answer43" placeholder="*****w"> in scope and covers a single event.<input type="button" value="Submit" onclick="submitAnswer('answer43', 'check43', -1052669861)"><span class="check" id="check43"><img src="images/error_icon.svg" alt="not answered" width="50" height="50"></span></p>
+            </div>
+            <div id="question">
+                <h3>Question 4</h3>
+                <p>We use Academic Search Complete to find <input type="text" name="answer44" id="answer44" placeholder="**** *******d"> journal articles.<input type="button" value="Submit" onclick="submitAnswer('answer44', 'check44', 1649699573)"><span class="check" id="check44"><img src="images/error_icon.svg" alt="not answered" width="50" height="50"></span></p>
+            </div>
+            <div id="question">
+                <h3>Question 5</h3>
+                <p><input type="text" name="answer45" id="answer45" placeholder="**** *****w"> is a very specific method of evaluating information in an article, it doesn’t mean the article is of better quality, and is rarely seen in news, magazine, or opinion articles.<input type="button" value="Submit" onclick="submitAnswer('answer45', 'check45', -1419510826)"><span class="check" id="check45"><img src="images/error_icon.svg" alt="not answered" width="50" height="50"></span></p>
+            </div>
+            <div id="exercise1">
+                <h3>Exercise 4</h3>
+                <label for="exercise1_box">Paste the citation you copied from the database here:</label>
+                <input type="text" size="60" name="exercise4_box" id="exercise4_box" placeholder="MLA citation from database">
+                <input type="button" value="Submit" onclick="getFlag('exercise4_box', -1334590951, 'flag_field4')">
+                <div id="flag_field4"></div>
+            </div>
+            <div id="flag">
+                <h3>Flag</h3>
+                <label for="flag_box4">Paste your flag here:</label>
+                <input type="text" name="flag_box4" id="flag_box4" size="35">
+                <input type="button" value="submit" onclick="checkFlag('flag_box4', 'finish_4', 'task_completed4')">
+                <div id="finish_4"></div>
+            </div>
+        </div>
+    </div>
+    <div id="section_header" onclick="showSection('section5')"><img src="images/web_icon.svg" alt="icon" srcset="" width="50" height="50"> <h2>Section 5: find quality information on the web</h2><a href="walkthrough_research_process.html" target="_blank" rel="noopener"><img src="images/download.svg" alt="Walkthrough" srcset="" width="50" height="50"> Walkthrough </a><div class="task_completed" id="task_completed5"><img src="images/lock.svg" alt="not answered" width="50" height="50"></div></div>
+    <div class="section" id="section5">
+        <div class="task">
+            <div id="question">
+                <h3>Question 1</h3>
+                <p>Even if we find it on the web, <input type="text" name="answer51" id="answer51" placeholder="********* **********n" size="30"> comes from books, databases and other research publications.<input type="button" value="Submit" onclick="submitAnswer('answer51', 'check51', -109887617)"><span class="check" id="check51"><img src="images/error_icon.svg" alt="not answered" width="50" height="50"></span></p>
+            </div>
+            <div id="question">
+                <h3>Question 2</h3>
+                <p>The website ending (.com, .org, .gov, .edu) is called a <input type="text" name="answer52" id="answer52" placeholder="*****n">, and it can tell us a lot about the type of website we are using.<input type="button" value="Submit" onclick="submitAnswer('answer52', 'check52', -1326197564)"><span class="check" id="check52"><img src="images/error_icon.svg" alt="not answered" width="50" height="50"></span></p>
+            </div>
+            <div id="question">
+                <h3>Question 3</h3>
+                <p>A website that ends in <input type="text" name="answer53" id="answer53" placeholder=".***"> is likely a website from a college, university, or other research institution.<input type="button" value="Submit" onclick="submitAnswer('answer53', 'check53', 1470664)"><span class="check" id="check53"><img src="images/error_icon.svg" alt="not answered" width="50" height="50"></span></p>
+            </div>
+            <div id="question">
+                <h3>Question 4</h3>
+                <p>We can use the <input type="text" name="answer54" id="answer54" placeholder="****:"> feature to look for websites with a specific domain, or to find articles within a single website.<input type="button" value="Submit" onclick="submitAnswer('answer54', 'check54', 109447635)"><span class="check" id="check54"><img src="images/error_icon.svg" alt="not answered" width="50" height="50"></span></p>
+            </div>
+            <div id="question">
+                <h3>Question 5</h3>
+                <p>Another way we can make sure we access as good quality information as possible is by using <input type="text" name="answer55" id="answer55" placeholder="****** ******r">.<input type="button" value="Submit" onclick="submitAnswer('answer55', 'check55', -2055096321)"><span class="check" id="check55"><img src="images/error_icon.svg" alt="not answered" width="50" height="50"></span></p>
+            </div>
+            <div id="exercise1">
+                <h3>Exercise 1</h3>
+                <label for="exercise1_box">Paste the citation you copied from Google Scholar here:</label>
+                <input type="text" size="60" name="exercise5_box" id="exercise5_box" placeholder="Google Scholar MLA citation">
+                <input type="button" value="Submit" onclick="getFlag('exercise5_box', 120587702, 'flag_field5')">
+                <div id="flag_field5"></div>
+            </div>
+            <div id="flag">
+                <h3>Flag</h3>
+                <label for="flag_box5">Paste your flag here:</label>
+                <input type="text" name="flag_box5" id="flag_box5" size="35">
+                <input type="button" value="submit" onclick="checkFlag('flag_box5', 'finish_5', 'task_completed5')">
+                <div id="finish_5"></div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <h2>The MIT License (MIT)</h2>
+
+        <p>Copyright © 2022 sergio lopez</p>
+    
+        <p>Permission is hereby granted, free of charge, to any person obtaining a copy
+          of this software and associated documentation files (the “Software”), to deal
+          in the Software without restriction, including without limitation the rights
+          to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+          copies of the Software, and to permit persons to whom the Software is
+          furnished to do so, subject to the following conditions:</p>
+    
+        <p>The above copyright notice and this permission notice shall be included in
+          all copies or substantial portions of the Software.</p>
+    
+        <p>THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+          IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+          FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+          AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+          LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+          OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+          THE SOFTWARE.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

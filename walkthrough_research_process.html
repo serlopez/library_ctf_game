@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Walkthrough: the research process</title>
+</head>
+<body>
+    <label for="flag_field">Paste your citation here:</label>
+    <input type="text" name="flag_field" id="flag_field">
+    <input type="button" value="Get flag" onclick="makeFlag()">
+    <div id="flag"></div>
+    <script>
+    function makeid(length) {
+        var result           = '';
+        var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+        var charactersLength = characters.length;
+        for ( var i = 0; i < length; i++ ) {
+            result += characters.charAt(Math.floor(Math.random() * charactersLength));
+            }
+        return result;
+        }
+
+        function makeFlag(){
+            const flag = makeid(20);
+            document.getElementById("flag").innerHTML = flag;
+        }
+    console.log(makeid(20));
+    
+    </script>
+</body>
+</html>
