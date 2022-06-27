@@ -31,6 +31,7 @@ function getFlagExercise1(answer, flagField){
     citation = citation.trim();
     if (citation.includes("“Process.” Merriam-Webster.com Dictionary, Merriam-Webster, https://www.merriam-webster.com/dictionary/process.")) {
         const flag = makeid(30);
+        document.getElementById(flagField).style.visibility = 'visible';
         document.getElementById(flagField).innerHTML = flag;
     }
     else{
@@ -84,5 +85,5 @@ function showSection(section){
     x.style.display = 'block';
 }
 
-let hashAnswer = stringToHash('peer reviewed');
+let hashAnswer = stringToHash('abstract');
 console.log(hashAnswer);

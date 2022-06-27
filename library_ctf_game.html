@@ -43,13 +43,13 @@
                 </div>
                 <div id="exercise1">
                     <h3>Exercise 1</h3>
-                    <label for="exercise1_box">Paste the MLA citation from the Merriam-Webster dictionary online here:</label>
+                    <label for="exercise1_box">Paste the MLA citation from the Merriam-Webster dictionary online here to capture the flag:</label>
                     <input type="text" size="60" name="exercise1_box" id="exercise1_box" placeholder="MLA citation">
                     <input type="button" value="Submit" onclick="getFlagExercise1('exercise1_box', 'flag_field1')">
-                    <div id="flag_field1"></div>
+                    <div class="flag_field" id="flag_field1"></div>
+                    <p></p>
                 </div>
                 <div id="flag">
-                    <h3>Flag</h3>
                     <label for="flag_box1">Paste your flag here:</label>
                     <input type="text" name="flag_box1" id="flag_box1" size="35">
                     <input type="button" value="submit" onclick="checkFlag('flag_box1', 'finish_1', 'task_completed1')">
@@ -82,13 +82,12 @@
             </div>
             <div id="exercise2">
                 <h3>Exercise 2</h3>
-                <label for="exercise2_box">Paste the wikipedia item ID number here:</label>
+                <label for="exercise2_box">Paste the wikipedia item ID number here to capture the flag:</label>
                 <input type="text" size="20" name="exercise2_box" id="exercise2_box" placeholder="Wikidata item ID">
                 <input type="button" value="Submit" onclick="getFlag('exercise2_box', 1424237664, 'flag_field2')">
-                <div id="flag_field2"></div>
+                <div class="flag_field" id="flag_field2"></div>
             </div>
             <div id="flag">
-                <h3>Flag</h3>
                 <label for="flag_box2">Paste your flag here:</label>
                 <input type="text" name="flag_box2" id="flag_box2" size="35">
                 <input type="button" value="submit" onclick="checkFlag('flag_box2', 'finish_2', 'task_completed2')">
@@ -121,13 +120,12 @@
             </div>
             <div id="exercise1">
                 <h3>Exercise 3</h3>
-                <label for="exercise1_box">Paste the citation from the library catalog here:</label>
+                <label for="exercise1_box">Paste the citation from the library catalog here to capture the flag:</label>
                 <input type="text" size="120" name="exercise3_box" id="exercise3_box" placeholder="Library catalog citation in MLA">
                 <input type="button" value="Submit" onclick="getFlag('exercise3_box', 2011119281, 'flag_field3')">
-                <div id="flag_field3"></div>
+                <div class="flag_field" id="flag_field3"></div>
             </div>
             <div id="flag">
-                <h3>Flag</h3>
                 <label for="flag_box3">Paste your flag here:</label>
                 <input type="text" name="flag_box3" id="flag_box3" size="35">
                 <input type="button" value="submit" onclick="checkFlag('flag_box3', 'finish_3', 'task_completed3')">
@@ -158,15 +156,18 @@
                 <h3>Question 5</h3>
                 <p><input type="text" name="answer45" id="answer45" placeholder="**** *****w"> is a very specific method of evaluating information in an article, it doesn’t mean the article is of better quality, and is rarely seen in news, magazine, or opinion articles.<input type="button" value="Submit" onclick="submitAnswer('answer45', 'check45', -1419510826)"><span class="check" id="check45"><img src="images/error_icon.svg" alt="not answered" width="50" height="50"></span></p>
             </div>
+            <div id="question">
+                <h3>Question 6</h3>
+                <p>The <input type="text" name="answer46" id="answer46" placeholder="*******t"> is a short summary of what the article actually says. It can tell you right away if the article is of use to you.<input type="button" value="Submit" onclick="submitAnswer('answer46', 'check46', 1732898850)"><span class="check" id="check46"><img src="images/error_icon.svg" alt="not answered" width="50" height="50"></span></p>
+            </div>
             <div id="exercise1">
                 <h3>Exercise 4</h3>
-                <label for="exercise1_box">Paste the citation you copied from the database here:</label>
+                <label for="exercise1_box">Paste the citation you copied from the database here to capture the flag:</label>
                 <input type="text" size="60" name="exercise4_box" id="exercise4_box" placeholder="MLA citation from database">
                 <input type="button" value="Submit" onclick="getFlag('exercise4_box', -1334590951, 'flag_field4')">
-                <div id="flag_field4"></div>
+                <div class="flag_field" id="flag_field4"></div>
             </div>
             <div id="flag">
-                <h3>Flag</h3>
                 <label for="flag_box4">Paste your flag here:</label>
                 <input type="text" name="flag_box4" id="flag_box4" size="35">
                 <input type="button" value="submit" onclick="checkFlag('flag_box4', 'finish_4', 'task_completed4')">
@@ -199,13 +200,12 @@
             </div>
             <div id="exercise1">
                 <h3>Exercise 1</h3>
-                <label for="exercise1_box">Paste the citation you copied from Google Scholar here:</label>
+                <label for="exercise1_box">Paste the citation you copied from Google Scholar here to capture the flag:</label>
                 <input type="text" size="60" name="exercise5_box" id="exercise5_box" placeholder="Google Scholar MLA citation">
                 <input type="button" value="Submit" onclick="getFlag('exercise5_box', 120587702, 'flag_field5')">
-                <div id="flag_field5"></div>
+                <div class="flag_field" id="flag_field5"></div>
             </div>
             <div id="flag">
-                <h3>Flag</h3>
                 <label for="flag_box5">Paste your flag here:</label>
                 <input type="text" name="flag_box5" id="flag_box5" size="35">
                 <input type="button" value="submit" onclick="checkFlag('flag_box5', 'finish_5', 'task_completed5')">
@@ -218,23 +218,6 @@
 
         <p>Copyright © 2022 sergio lopez</p>
     
-        <p>Permission is hereby granted, free of charge, to any person obtaining a copy
-          of this software and associated documentation files (the “Software”), to deal
-          in the Software without restriction, including without limitation the rights
-          to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-          copies of the Software, and to permit persons to whom the Software is
-          furnished to do so, subject to the following conditions:</p>
-    
-        <p>The above copyright notice and this permission notice shall be included in
-          all copies or substantial portions of the Software.</p>
-    
-        <p>THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-          IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-          FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-          AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-          LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-          OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-          THE SOFTWARE.</p>
     </footer>
     <script src="script.js"></script>
 </body>
